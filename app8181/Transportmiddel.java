@@ -1,4 +1,5 @@
-package app8181.nl;
+package app8181;
+
 
 import java.time.LocalTime;
 
@@ -9,7 +10,7 @@ public class Transportmiddel {
 	public String vertreklocatie;
 	public String aankomstlocatie;
 	public String soortopenbaarvervoer;
-	Transportmiddel (String bedrijfsnaam, LocalTime vertrektijd, LocalTime aankomsttijd, String vertreklocatie, String aankomstlocatie, String soortopenbaarvervoer){
+	protected Transportmiddel (String bedrijfsnaam, LocalTime vertrektijd, LocalTime aankomsttijd, String vertreklocatie, String aankomstlocatie, String soortopenbaarvervoer){
 		this.bedrijfsnaam = bedrijfsnaam;
 		this.vertrektijd = vertrektijd;
 		this.aankomsttijd = aankomsttijd;
@@ -18,7 +19,7 @@ public class Transportmiddel {
 		this.soortopenbaarvervoer = soortopenbaarvervoer;
 	}
 	void vertrekmelding() {
-		System.out.println("De " + bedrijfsnaam + " " + soortopenbaarvervoer + " van " + vertreklocatie + " naar " + aankomstlocatie +  " vertrekt om " + vertrektijd);
+		System.out.println("De " + bedrijfsnaam + " " + soortopenbaarvervoer.toLowerCase() + " van " + vertreklocatie + " naar " + aankomstlocatie +  " vertrekt om " + vertrektijd);
 		
 	}
 }

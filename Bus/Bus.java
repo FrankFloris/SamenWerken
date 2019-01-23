@@ -1,4 +1,4 @@
-package app8181.nl.Bus;
+package Bus;
 
 import java.time.*;
 
