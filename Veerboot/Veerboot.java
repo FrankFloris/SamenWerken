@@ -1,4 +1,4 @@
-package app8181.nl.Veerboot;
+package Veerboot;
 
 import java.time.*;
 
