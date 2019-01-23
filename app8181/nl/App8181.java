@@ -8,6 +8,6 @@ public class App8181 {
 		LocalTime a = LocalTime.now();
 		LocalTime b = LocalTime.of(12, 13);
 		Transportmiddel c = new Transportmiddel("NS", a, b, "Amsterdam", "Rotterdam", "trein");
-		System.out.println(c.vertrekmelding());
+		System.out.println("test");
 	}
 }
